@@ -326,3 +326,52 @@ header .nav-right .icon{
         text-align: center;
     }
 }
+/*====closed discount section----------*/
+/*==========start free delivery section------------*/
+.free-delivery{
+    display: flex;
+    align-items:center;
+ justify-content: space-between;
+    width: 100%;
+    padding: 25px 100px;
+    text-align: center;
+}
+.free-delivery .left{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.free-delivery .right{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.free-delivery .money-back, .delivery, .support, .payment{
+    width: 50%;
+    min-width: 156px;
+    min-height: 184px;
+    text-align: center;
+    border: 1px solid rgb(192, 190, 190);
+    padding: 20px;
+}
+.free-delivery h1{
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: red;
+}
+.free-delivery h5{
+    margin-bottom: 8px;
+}
+@media only screen and (max-width:820px){
+    .free-delivery{
+        display: block;
+        align-items: center;
+        padding: 25px 5px;
+    }
+    .free-delivery .left{
+        width: 100%;
+    }
+    .free-delivery .right{
+        width: 100%;
+    }
+}

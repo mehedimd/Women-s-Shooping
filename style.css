@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+.logo{
+    font-weight: bold;
+    font-size:20px;
+}
+.logo span{
+    color: red;
+    
+}
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+/*--------dropdown------*/
+header nav .dropdown{
+    position: relative;
+}
+header nav .dropdown .dropdown-content{
+    position: absolute;
+    display: none;
+    min-width: 150px;
+    background-color: white;
+    color: black;
+    left: 10px;
+}
+header nav .dropdown .dropdown-content a{
+    display: block;
+    padding: 16px 8px;
+}
+header nav .dropdown .dropdown-content a:hover{
+    background-color: rgb(212, 203, 203);
+    color: red;
+}
+header nav .dropdown:hover .dropdown-content{
+    display:  block;
+}
+header ul li sup{
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 8px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    
+}
+header .nav-middle a{
+    padding: 8px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+header .nav-middle a:hover{
+    color: tomato;
+}
+header .nav-right a:hover{
+    color: tomato;
+}
+header .nav-right a{
+    padding: 8px 6px;
+    font-size: 14px;
+    
+}
+header .nav-right .icon{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    /* header .nav-middle a{
+        padding: 4px 8px;
+        font-size: 11px;
+        
+    } */
+    header{
+        padding:25px 50px;
+    }
+    header .nav-middle{
+        display: none;
+    }
+
+    header .nav-right .icon{
+        display: inline-block;
+    }
+    header .nav-right .icon:hover header.nav-middle{
+        display: block;
+    }
+}
+/*-------close Header----------*/
+
+/*---start collection section------*/
+.collection{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+    overflow: hidden;
+    align-items: center;
+    background-image: url("gradiant2.jpg");
+}
+.collection .content{
+    width: 60%;
+    float: left;
+    text-align: center;
+
+
+}
+.collection .content p{
+    letter-spacing: 2px;
+    
+}
+.collection .content h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.collection .content button{
+    border:none;
+    padding: 15px 36px;
+    border-radius: 25px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+.collection .content button:hover{
+    background-color: white;
+    color: rgb(16, 16, 70);
+ 
+}
+.collection .photo{
+    width: 40%;
+    margin-top: 40px;
+    float:right;
+   
+}
+
+.collection .photo img{
+    width: 300px;
+    height:auto;
+    
+    
+}
+@media only screen and (max-width: 740px){
+    .collection{
+        display: block;
+        height: 600px;
+    }
+    .collection .content{
+       width: 100%;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        order: 2;
+        
+    }
+    .collection .photo{
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        order: 1;
+       
+    }
+}
+
+/*-----Feature Product Section------*/
+.featured-product{
+    text-align: center;
+    padding:25px 100px;
+    width: 100%;
+    overflow: auto;
+}
+.featured-product h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.featured-product .img-gellary{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 500px;
+}
+.featured-product .img-gellary .left-img, .middle-img, .right-img{
+    width: 33%;
+}
+.featured-product .img-gellary img{
+    margin-bottom: 25px;
+    width:90%;
+    height: 400px;
+}
+.featured-product .img-gellary .img1,.img2,.img3{
+    position: relative;
+}
+.featured-product .img-gellary .gellary-content span{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.featured-product .img-gellary .gellary-content p{
+    margin-bottom: 8px;
+}
+.featured-product .img-gellary .hidden-btn button{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    color:black;
+    
+    
+}
+.featured-product .img-gellary .hidden-btn{
+    position: absolute;
+    bottom: 25%;
+    left:18%;
+    right:18%;
+    display: none;
+}
+.featured-product .img-gellary img:hover + .hidden-btn{
+    display: block;
+    transition: all 1s ease 0s;
+    
+}
+.featured-product .img-gellary .hidden-btn button:hover{
+    background-color: tomato;
+    color: white;
+    
+}
+
+@media only screen and (max-width:768px){
+    .featured-product .img-gellary{
+        display: block;
+        height: auto;
+
+    }
+    .featured-product .img-gellary .left-img, .right-img, .middle-img{
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    .featured-product .img-gellary img{
+        margin-bottom: 25px;
+        width:100%;
+        height:auto;
+    }
+    .featured-product{
+        padding: 0;
+    }
+}
+/*------END FEATURED PRODUCT----*/
+/*-----DISCOUNT SECTON------*/
+.discount{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(234,226,216);
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 25px 0px;
+}
+.discount .discount-content{
+    width: 50%;
+    text-align: center;
+}
+.discount .discount-content h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+    font-family: 'Cookie', cursive;
+}
+.discount .discount-content h2{
+    font-weight: 100;
+    margin-bottom: 20px;
+
+}
+.discount .discount-content button{
+    border:none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
+.discount .discount-content button:hover{
+
+    background-color: white;
+    color: black;
+
+}
+.d
+.discount .discount-img{
+    width: 50%;
+}
+.discount .discount-img img{
+    width:85%;
+}
+@media only screen and (max-width:768px){
+    .discount{
+        height: auto;
+        display: block;
+        
+    }
+    .discount .discount-content{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .discount .discount-img{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -25,6 +25,7 @@ header ul li{
 }
 /*--------dropdown------*/
 header nav .dropdown{
+    display: inline-block;
     position: relative;
 }
 header nav .dropdown .dropdown-content{
@@ -78,6 +79,8 @@ header .nav-right a{
 header .nav-right .icon{
     display: none;
 }
+
+
 @media only screen and (max-width: 768px){
     /* header .nav-middle a{
         padding: 4px 8px;
@@ -96,6 +99,45 @@ header .nav-right .icon{
     }
     header .nav-right .icon:hover header.nav-middle{
         display: block;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive .nav-middle{
+        display: block;
+        position: absolute;
+        background-color: white;
+        max-width: 150px;
+        min-width: 50px;
+        left: 65%;
+        bottom:-200px;
+        text-align: center;
+        border: 1px solid rgb(233, 227, 227);
+    }
+    .navbar.responsive .nav-middle li{
+        display: block;
+    }
+    .navbar.responsive .nav-middle li a{
+        display: block;
+    }
+    .navbar.responsive .nav-middle a:hover{
+        background-color: tomato;
+        color: white;
+    }
+    .navbar.responsive .nav-middle .dropdown{
+        display: block;
+    }
+    .navbar.responsive .nav-middle .dropdown .dropdown-content{
+        background-color: rgb(231, 233, 227);
+        border: 1px solid rgb(207, 205, 205);
+        left: 60px;
+        top: 0;
+        min-width: 60px;
+    }
+}
+@media only screen and (max-width:414px){
+    .navbar .nav-right .hide{
+        display: none;
     }
 }
 /*-------close Header----------*/

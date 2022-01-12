@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="navbar" id="navId">
         <a href="#" class="logo">MEHEDI<span>.</span></a>
         <nav class="nav-middle">
             <ul>
-                <div class="dropdown" style="display: inline-block;">
+                <div class="dropdown">
                     <li><a href="#">HOME</a></li>
                     <div class="dropdown-content">
                         <a href="#">Link 01</a>
@@ -30,11 +30,11 @@
         </nav>
         <div class="nav-right">
             <ul>
-                <li class="icon"><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li class="icon" onclick="myFunction()"><a href="#"><i class="fa fa-bars"></i></a></li>
 
-                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i></a><sup>15</sup></li>
-                <li><a href="#"><i class="far fa-heart"></i></a><sup>8</sup></li>
+                <li class="hide"><a href="#"><i class="fas fa-search"></i></a></li>
+                <li class="hide"><a href="#"><i class="fas fa-shopping-cart"></i></a><sup>15</sup></li>
+                <li class="hide"><a href="#"><i class="far fa-heart"></i></a><sup>8</sup></li>
             </ul>
         </div>
     </header>
@@ -161,5 +161,19 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        function myFunction(){
+         var x = document.querySelector("#navId");
+         if(x.className === "navbar"){
+             x.className += " responsive";
+         }
+         else{
+             x.className = "navbar";
+         }
+        }
+        
+     </script>
 </body>
 </html>

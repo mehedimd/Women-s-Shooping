@@ -373,7 +373,7 @@ header .nav-right .icon{
 .free-delivery{
     display: flex;
     align-items:center;
- justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
     padding: 25px 100px;
     text-align: center;
@@ -381,6 +381,7 @@ header .nav-right .icon{
 .free-delivery .left{
     width: 50%;
     display: flex;
+    margin-right: 8px;
     justify-content: space-between;
 }
 .free-delivery .right{
@@ -395,6 +396,12 @@ header .nav-right .icon{
     text-align: center;
     border: 1px solid rgb(192, 190, 190);
     padding: 20px;
+}
+.free-delivery .left .delivery{
+    margin-left: 8px;
+}
+.free-delivery .right .support{
+    margin-right: 8px;
 }
 .free-delivery h1{
     font-size: 40px;
@@ -412,8 +419,17 @@ header .nav-right .icon{
     }
     .free-delivery .left{
         width: 100%;
+        margin-right: 0px;
+
     }
     .free-delivery .right{
         width: 100%;
     }
+    .free-delivery .left .money-back{
+        margin-bottom: 8px;
+    }
+    .free-delivery .left .delivery{
+        margin-bottom: 8px;
+    }
 }
+/*----------*/

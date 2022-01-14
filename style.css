@@ -107,7 +107,7 @@ header .nav-right .icon{
         display: block;
         position: absolute;
         background-color: white;
-        max-width: 150px;
+        width: 150px;
         min-width: 50px;
         left: 65%;
         bottom:-200px;
@@ -384,10 +384,11 @@ header .nav-right .icon{
     margin-right: 8px;
     justify-content: space-between;
 }
-.free-delivery .right{
+.free-delivery .right-bal{
     width: 50%;
     display: flex;
     justify-content: space-between;
+   
 }
 .free-delivery .money-back, .delivery, .support, .payment{
     width: 50%;
@@ -397,12 +398,10 @@ header .nav-right .icon{
     border: 1px solid rgb(192, 190, 190);
     padding: 20px;
 }
-.free-delivery .left .delivery{
+.free-delivery .delivery, .payment{
     margin-left: 8px;
 }
-.free-delivery .right .support{
-    margin-right: 8px;
-}
+
 .free-delivery h1{
     font-size: 40px;
     margin-bottom: 16px;
@@ -412,26 +411,23 @@ header .nav-right .icon{
     margin-bottom: 8px;
 }
 @media only screen and (max-width:820px){
-    .free-delivery{
-        display: block;
-        align-items: center;
+    .free-delivery {
+        flex-direction: column;
         padding: 25px 5px;
     }
     .free-delivery .left{
-        width: 100%;
-        margin-right: 0px;
+    margin-right: 0px;
 
     }
-    .free-delivery .right{
+    .free-delivery .left{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .free-delivery .right-bal{
         width: 100%;
     }
-    .free-delivery .left .money-back{
-        margin-bottom: 8px;
-    }
-    .free-delivery .left .delivery{
-        margin-bottom: 8px;
-    }
 }
+
 /*-----slideshow-----*/
 .slideshow{
     width: 700px;

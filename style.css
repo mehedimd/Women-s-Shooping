@@ -519,5 +519,126 @@ input[name="r"]{
     }
 }
 /*--------end slideshow-----*/
-/*-----start flex-practice------*/
+/*-----start Footer section------*/
+.footer-section{
+    background-color: #E9E2D8;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 70px;
+}
+.footer-section .left, .right{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.footer-section .about-us, .useful-link, .online-shopping{
+    min-width:20px;
+    height: auto;
+}
+.footer-section h4{
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bolder;
+    
+}
+.footer-section p{
+    margin-bottom: 10px;
+    color: rgb(63, 60, 60);
+    transition: 0.3s;
+    font-size: 16px;
+    cursor: pointer;
+}
+.footer-section p:hover{
 
+    color: tomato;
+}
+.footer-section .mobile-app{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-section .mobile-app button{
+    width: 120px;
+    border: none;
+    border-radius: 5PX;
+    background-color: white;
+    padding: 8px 4px;
+    cursor: pointer;
+    
+}
+.footer-section .mobile-app button i{
+    color: tomato;
+    font-size: 30px;
+}
+.footer-section .mobile-app button:hover{
+    background-color: tomato;
+    color: white;
+}
+.footer-section .mobile-app button:hover i{
+    color: white;
+}
+.footer-section .mobile-app .bottom span{
+   padding: 10px;
+   border-radius: 5px;
+    background-color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.footer-section .mobile-app .bottom span:hover{
+    background-color: tomato;
+    color: white;
+}
+@media only screen and (max-width:767px){
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-section .left, .right{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .footer-section .left{
+        margin-bottom: 16px;
+    }
+    .footer-section .about-us, .useful-link, .online-shopping, .mobile-app{
+        width: 50%;
+        min-width:20px;
+        height: auto;
+    }
+}
+@media only screen and (max-width:631px){
+    .footer-section .left, .right{
+        flex-direction: column;
+    }
+    .footer-section .about-us, .useful-link, .online-shopping, .mobile-app{
+        width: 100%;
+        min-width:20px;
+        height: auto;
+    }
+    .footer-section .right .top{
+        margin-bottom: 16px;
+    }
+    .footer-section .right .top button{
+        margin-bottom: 8px;
+    }
+    .footer-section .right .bottom{
+        margin-top: 16px;
+    }
+    .footer-section .about-us, .online-shopping{
+        margin-bottom: 16px;
+    }
+      
+        
+
+    }
+    /*copyright*/
+    .copyright{
+        background-color: rgb(90, 88, 88);
+        color: white;
+        text-align: center;
+    }
+    .copyright p a{
+        text-decoration: none;
+        color: tomato;
+    }
